@@ -2,14 +2,16 @@ import React from 'react';
 import { TouchableOpacity, StyleSheet, Text, View } from 'react-native'
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
-function AuthButton(props) {
+function AuthButton({btnTitle, btnType, navigation}) {
   return (
-    <TouchableOpacity style={styles.block}>
+    <TouchableOpacity 
+      style={styles.block}
+      onPress={() => {navigation.navigate('EmailSignUpScreen')}}>
       <View style={styles.iconWrapper} >
-        <FontAwesome name={props.btnType} size={25}/>
+        <FontAwesome name={btnType} size={25}/>
       </View>
       <View style={styles.textWrapper}>
-        <Text style={{fontSize:16, }}>{props.btnTitle}</Text>
+        <Text style={{fontSize:16, }}>{btnTitle}</Text>
       </View>
     </TouchableOpacity>
   )
@@ -32,7 +34,7 @@ const styles = StyleSheet.create({
       marginLeft:30,
     },
     textWrapper:{
-      marginLeft:65,
+      marginLeft:95,
     }
 })
 
