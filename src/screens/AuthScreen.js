@@ -6,20 +6,19 @@ import AuthImage from '../components/AuthImage';
 
 function AuthScreen(){
     return (
-        <SafeAreaView style={styles.fullScreen}>
-            <ImageBackground 
-                style={{flex:1,width:"100%", }} 
-                source={require('../assets/images/parents.jpg')}
-                blurRadius={3}>  
-                <View style={{flex:1, alignItems:"center", marginTop:370}}>
-                    <Text>가족들의 모든 일상을 저장하세요</Text>
-                </View>
-                <View style={styles.authForm}>
-                    <AuthButton title="SignUp with in Google"/>
-                    <AuthButton title="SignUp with in Email"/>
-                    <AuthButton title="SignIn"/>
-                </View>
-            </ImageBackground>
+        <SafeAreaView style={styles.fullScreen}>  
+            <View style={{flex:1, alignItems:"center", marginTop:250}}>
+                <Text style={[styles.bold]}>Text Area</Text>
+            </View>
+            <View style={styles.authForm}>
+                <AuthButton 
+                    btnTitle="Social Login"
+                    btnType="google"/>
+                <AuthButton 
+                    btnTitle="Social Login"
+                    btnType="envelope"/>
+                <AuthButton title="SignIn"/>
+            </View>
         </SafeAreaView>
     )
 }
@@ -33,7 +32,8 @@ const styles = StyleSheet.create({
     authForm:{
         marginVertical:25,
         width:"100%",
-    }
+    },
+    bold:{fontFamily: 'NotoSansKR-Black', fontSize:25,}
 })
 
 export default AuthScreen

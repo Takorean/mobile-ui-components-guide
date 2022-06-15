@@ -10,6 +10,7 @@ MERGED from [com.facebook.flipper:flipper-network-plugin:0.125.0] C:\Users\hyunt
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] C:\Users\hyunt\.gradle\caches\transforms-3\df731ac58fe0112a493f9730ba0671c1\transformed\jetified-flipper-fresco-plugin-0.125.0\AndroidManifest.xml:8:1-15:12
 MERGED from [:react-native-safe-area-context] C:\Users\hyunt\code\MIX_U\Mvp\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] C:\Users\hyunt\code\MIX_U\Mvp\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-vector-icons] C:\Users\hyunt\code\MIX_U\Mvp\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.react:react-native:0.68.2] C:\Users\hyunt\.gradle\caches\transforms-3\7d9d92dc8ec1ba2e45aff2ecbb549550\transformed\jetified-react-native-0.68.2\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\hyunt\.gradle\caches\transforms-3\6ca4772dc16ee0aa26e0cc717aaeee42\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [org.webkit:android-jsc:r250230] C:\Users\hyunt\.gradle\caches\transforms-3\b26b48339e296557281f3d12b79a5a5f\transformed\jetified-android-jsc-r250230\AndroidManifest.xml:2:1-11:12
@@ -168,6 +169,8 @@ MERGED from [:react-native-safe-area-context] C:\Users\hyunt\code\MIX_U\Mvp\node
 MERGED from [:react-native-safe-area-context] C:\Users\hyunt\code\MIX_U\Mvp\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-screens] C:\Users\hyunt\code\MIX_U\Mvp\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-screens] C:\Users\hyunt\code\MIX_U\Mvp\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] C:\Users\hyunt\code\MIX_U\Mvp\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] C:\Users\hyunt\code\MIX_U\Mvp\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-native:0.68.2] C:\Users\hyunt\.gradle\caches\transforms-3\7d9d92dc8ec1ba2e45aff2ecbb549550\transformed\jetified-react-native-0.68.2\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-native:0.68.2] C:\Users\hyunt\.gradle\caches\transforms-3\7d9d92dc8ec1ba2e45aff2ecbb549550\transformed\jetified-react-native-0.68.2\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\hyunt\.gradle\caches\transforms-3\6ca4772dc16ee0aa26e0cc717aaeee42\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
