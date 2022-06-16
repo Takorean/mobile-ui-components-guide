@@ -1,38 +1,49 @@
 import React from 'react';
-import {ImageBackground, StyleSheet, Text, View } from 'react-native'
+import { TouchableOpacity, StyleSheet, Text, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context';
 import AuthButton from '../components/AuthButton';
-import AuthImage from '../components/AuthImage';
 
 function AuthScreen({navigation}){
     return (
-        <SafeAreaView style={styles.fullScreen}>  
-            <View style={{flex:1, alignItems:"center", marginTop:250}}>
-                <Text style={[styles.bold]}>AuthScreen</Text>
+        <SafeAreaView style={styles.container}>  
+            <View style={styles.textContainer}>
+                <Text style={styles.bold}>AuthScreen</Text>
             </View>
             <View style={styles.authForm}>
                 <AuthButton 
-                    btnTitle="Text Area"
+                    btnTitle="Button"
                     btnType="google"/>
                 <AuthButton 
-                    btnTitle="Text Area"
+                    btnTitle="Button"
                     btnType="envelope"
                     navigation={navigation}/>
-                <AuthButton btnTitle="Text Area"/>
+                <View style={styles.signinForm}>
+                    <TouchableOpacity>
+                        <Text style={{fontSize:20}}>Button</Text>
+                    </TouchableOpacity>
+                </View>
             </View>
         </SafeAreaView>
     )
 }
 
 const styles = StyleSheet.create({
-    fullScreen:{
+    container:{
         flex:1,
         alignItems:'center',
         backgroundColor:'grey'
     },
+    textContainer:{
+        alignItems:"center", 
+        marginTop:250,
+    },
     authForm:{
-        marginVertical:25,
+        marginVertical:50,
         width:"100%",
+    },
+    signinForm:{
+        alignItems:'center',
+        marginVertical:15,
     },
     bold:{fontFamily: 'NotoSansKR-Black', fontSize:25,}
 })

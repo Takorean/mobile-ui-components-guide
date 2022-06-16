@@ -5,20 +5,20 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 function AuthButton({btnTitle, btnType, navigation}) {
   return (
     <TouchableOpacity 
-      style={styles.block}
+      style={styles.container}
       onPress={() => {navigation.navigate('EmailSignUpScreen')}}>
-      <View style={styles.iconWrapper} >
+      <View style={styles.iconContainer} >
         <FontAwesome name={btnType} size={25}/>
       </View>
-      <View style={styles.textWrapper}>
-        <Text style={{fontSize:16, }}>{btnTitle}</Text>
+      <View style={styles.textContainer}>
+        <Text style={{fontSize:20, }}>{btnTitle}</Text>
       </View>
     </TouchableOpacity>
   )
 }
 
 const styles = StyleSheet.create({
-    block:{
+    container:{
         flexDirection:'row',
         alignItems:'center',
         height:50,
@@ -28,12 +28,12 @@ const styles = StyleSheet.create({
         borderRadius:25,
         paddingVertical:13
     },
-    iconWrapper:{
+    iconContainer:{
       alignItems: 'center',
       justifyContent:'center',
       marginLeft:30,
     },
-    textWrapper:{
+    textContainer:{
       marginLeft:95,
     }
 })
