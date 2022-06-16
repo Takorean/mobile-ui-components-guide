@@ -8,11 +8,12 @@ function EmailSignUpScreen ({navigation}) {
     return (
         <SafeAreaView style={styles.fullScreen}>
             <View style={{}}>
-                <Text style={{fontSize:36, marginVertical:35}}>EmailSignUpScreen</Text>
+                <Text style={{fontSize:36, marginVertical:45}}>EmailSignUpScreen</Text>
             </View>
             <CustomInputArea placeholder="Placeholder"/>
             <CustomInputArea placeholder="Placeholder"/>
             <CustomButton navigation={navigation}/>
+            
         </SafeAreaView>
     )
 }
