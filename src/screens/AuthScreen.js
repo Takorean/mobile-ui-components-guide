@@ -34,8 +34,8 @@ const styles = StyleSheet.create({
         backgroundColor:'grey'
     },
     textContainer:{
-        alignItems:"center", 
-        marginTop:250,
+        flex:1,
+        alignItems:"center",
     },
     authForm:{
         marginVertical:50,
