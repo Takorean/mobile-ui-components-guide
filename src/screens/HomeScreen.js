@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import FloatingActionButton from '../components/FloatingActionButton';
 import TodoList from '../components/TodoList';
+import Card from '../components/Card';
 
 function HomeScreen () {
     //Dummy Data
@@ -13,6 +14,7 @@ function HomeScreen () {
 
     return (
         <View style={styles.container}>
+            <Card/>            
             <TodoList data={data}/>
             <FloatingActionButton/>
         </View>
