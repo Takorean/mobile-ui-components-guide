@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import FloatingActionButton from '../components/FloatingActionButton';
+import TodoList from '../components/TodoList';
 
 function HomeScreen () {
+    //Dummy Data
+    const [data, setData] = useState([
+        {id:1, text:'implement authButton', done: true},
+        {id:2, text:'implement FAB', done: false},
+        {id:3, text:'implement BNT', done: false},
+    ]);
+
     return (
         <View style={styles.container}>
+            <TodoList data={data}/>
             <FloatingActionButton/>
         </View>
     )
@@ -12,7 +21,8 @@ function HomeScreen () {
 
 const styles = StyleSheet.create({
     container:{
-        flex:1
+        flex:1,
+        backgroundColor:'grey'
     }
 });
 
