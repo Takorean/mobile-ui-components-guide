@@ -1,14 +1,15 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React from 'react';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import StorageScreen from '../screens/StorageScreen';
 
-const StorageStack = () => {
+const Stack = createNativeStackNavigator();
+
+function StorageStack() {
   return (
-    <View>
-      <Text>StorageStack</Text>
-    </View>
+    <Stack.Navigator>
+      <Stack.Screen name='StorageScreen' component={StorageScreen} options={{headerShown:false}}/>
+    </Stack.Navigator>
   )
 }
 
-export default StorageStack
-
-const styles = StyleSheet.create({})
+export default StorageStack;
