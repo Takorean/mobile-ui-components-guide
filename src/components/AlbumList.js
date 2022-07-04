@@ -12,7 +12,7 @@ function AlbumList ({profile}) {
             data={profile}
             renderItem={renderItem}
             numColumns={2}
-            columnWrapperStyle={{justifyContent:'space-evenly'}}/>
+            columnWrapperStyle={{justifyContent: 'space-evenly'}}/>
     )
 }
 

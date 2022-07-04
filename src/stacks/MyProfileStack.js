@@ -1,14 +1,17 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React from 'react';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import MyProfileScreen from '../screens/MyProfileScreen';
+import SetUpScreen from '../screens/SetUpScreen';
 
-const MyProfileStack = () => {
+const Stack = createNativeStackNavigator();
+
+function MyProfileStack() {
   return (
-    <View>
-      <Text>MyProfileStack</Text>
-    </View>
+    <Stack.Navigator>
+      <Stack.Screen name='MyProfileScreen' component={MyProfileScreen} options={{headerShown:false}}/>
+      <Stack.Screen name='SetUpScreen' component={SetUpScreen} options={{headerShown:false}}/>
+    </Stack.Navigator>
   )
 }
 
-export default MyProfileStack
-
-const styles = StyleSheet.create({})
+export default MyProfileStack;
