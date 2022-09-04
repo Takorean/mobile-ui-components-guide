@@ -7,12 +7,12 @@ export const basicDimensions = {
 };
 
 //calculate custom size
-export const DEVICE_HEIGHT = (
+export const DEVICE_HEIGHT : any = (
     Dimensions.get('screen').height *
     (1 / basicDimensions.height)
 ).toFixed(2);
 
-export const DEVICE_WIDTH = (
+export const DEVICE_WIDTH : any = (
     Dimensions.get('screen').height *
     (1 / basicDimensions.width)
 ).toFixed(2);
