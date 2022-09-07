@@ -17,6 +17,9 @@ function HomeScreen() {
       <TouchableOpacity style={styles.index} onPress={()=>navigation.navigate('BottomSheet')}>
         <Text>SHOW BOTTOMSHEET</Text>
       </TouchableOpacity>
+      <TouchableOpacity style={styles.index} onPress={()=>navigation.navigate('Tab')}>
+        <Text>SHOW Tab</Text>
+      </TouchableOpacity>
     </View>
   )
 }

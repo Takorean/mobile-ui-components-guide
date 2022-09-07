@@ -4,6 +4,7 @@ export type RootStackParamList = {
     Home: undefined;
     CheckBox: undefined;
     BottomSheet: undefined;
+    Tab: undefined;
 };
 
 export type RootStackNavigationProp = 
