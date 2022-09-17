@@ -20,6 +20,9 @@ function HomeScreen() {
       <TouchableOpacity style={styles.index} onPress={()=>navigation.navigate('Tab')}>
         <Text>SHOW Tab</Text>
       </TouchableOpacity>
+      <TouchableOpacity style={styles.index} onPress={()=>navigation.navigate('Server')}>
+        <Text>ServerRequest</Text>
+      </TouchableOpacity>
     </View>
   )
 }

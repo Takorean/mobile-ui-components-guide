@@ -18,9 +18,7 @@ function BottomSheetScreen() {
     bottomSheetModalRef.current?.present();  
   }, []);
   
-  const handleSheetChanges = useCallback((index: number) => {    
-    console.log('handleSheetChanges', index);  
-  }, []);
+  const handleSheetChanges = useCallback((index: number) => {}, []);
   
   return (
     <BottomSheetModalProvider>      
@@ -37,7 +35,7 @@ function BottomSheetScreen() {
           onChange={handleSheetChanges}        
         >          
           <View style={styles.contentContainer}>            
-            <Text>Awesome 🎉</Text>          
+            <Text>This is BottomSheet🎉</Text>          
           </View>        
         </BottomSheetModal>      
       </View>    

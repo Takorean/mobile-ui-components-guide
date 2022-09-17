@@ -13,6 +13,7 @@ import HomeScreen from '../screens/HomeScreen';
 import CheckBoxScreen from '../screens/CheckBoxScreen';
 import BottomSheetScreen from '../screens/BottomSheetScreen';
 import TabScreen from '../screens/TabScreen';
+import ServerRequestScreen from '../screens/ServerRequestScreen';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -23,6 +24,7 @@ function RootStack() {
             <Stack.Screen name="CheckBox" component={CheckBoxScreen} options={{headerShown:false}}/>
             <Stack.Screen name="BottomSheet" component={BottomSheetScreen} options={{headerShown:false}}/>
             <Stack.Screen name="Tab" component={TabScreen} options={{headerShown:false}}/>
+            <Stack.Screen name="Server" component={ServerRequestScreen} options={{headerShown:false}}/>
         </Stack.Navigator>
     );
 };

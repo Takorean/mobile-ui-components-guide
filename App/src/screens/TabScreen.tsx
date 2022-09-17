@@ -3,6 +3,8 @@ import { StyleSheet, Text, View, TouchableOpacity, Button, ActivityIndicator } f
 import BouncyCheckbox from 'react-native-bouncy-checkbox';
 import axios from 'axios';
 
+import StateTestView from '../components/StateTestView';
+
 const dummyData = {
     sorts:[
         {id:1, sort:'개인'},
@@ -64,6 +66,19 @@ const dummyData = {
     ] 
 };
 
+const dummy = {
+    "0":{
+        index:1
+    },
+    "1":{
+        index:2
+
+    },
+    "2":{
+        index:3
+
+    },
+}
 const test = {
     result :{
         0: {
@@ -82,12 +97,16 @@ function TabScreen () {
     const [tabState, setTabState] = useState<string>("개인");
     const [checkboxState, setCheckboxState] = useState(true);
 
+    const test = [1,2,3,4]
+
+    const testHandler = (data: number[]) => {
+        console.log("FUCKING Test",data);
+    };
+
     const emailList = dummyData.email.filter(item => (
         item.sort === tabState
     ));
-
-    console.log(emailList);
-
+    
     const toggleTab = (index: string) => {
         setTabState(index);
     };
@@ -127,9 +146,9 @@ function TabScreen () {
                     </View>
                 ))}
             </View>
-            <View>
-
-            </View>
+            <StateTestView 
+                testHandler={testHandler}
+                test={test}/>
         </View>
     );
 };

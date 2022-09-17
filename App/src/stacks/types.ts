@@ -5,6 +5,7 @@ export type RootStackParamList = {
     CheckBox: undefined;
     BottomSheet: undefined;
     Tab: undefined;
+    Server: undefined;
 };
 
 export type RootStackNavigationProp = 
